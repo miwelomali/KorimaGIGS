@@ -2,6 +2,8 @@ package com.example.eva1_11_listarestaurantes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -32,5 +34,19 @@ public class MainActivity extends AppCompatActivity implements ListView.OnItemCl
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
         Toast.makeText(this, cRestauntes [position].getNombre(), Toast.LENGTH_SHORT).show();
+        Intent inDatos = new Intent();
+        inDatos.putExtra("nombre", cRestauntes[position].getNombre());
+        inDatos.putExtra("comida", cRestauntes[position].getComida());
+        inDatos.putExtra("locacion", cRestauntes[position].getLocacion());
+        inDatos.putExtra("rating", cRestauntes[position].getRating());
+        inDatos.putExtra("imagenRes", cRestauntes[position].getImagen());
+
+
+
+
+        setResult(Activity.RESULT_OK,inDatos);
+        Toast.makeText(this, cRestauntes[position].getLocacion(), Toast.LENGTH_SHORT).show();
+        finish();
+
     }
 }
