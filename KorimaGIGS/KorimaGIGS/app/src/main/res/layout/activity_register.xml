@@ -42,7 +42,7 @@
             android:textColor="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/edTxtUsername"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -62,7 +62,7 @@
             android:textColor="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/edTxtEmail"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -83,7 +83,7 @@
 
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/edTxtPassword"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -99,22 +99,23 @@
             android:layout_height="wrap_content" />
 
         <RadioGroup
+            android:id="@+id/rdGrpTipoUsuario"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:checkedButton="@id/radioButton">
+            android:checkedButton="@id/rdBtnUser">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/rdBtnUser"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="User"
+                android:text="Grupi"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/rdBtnArtist"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -123,11 +124,11 @@
                 android:textSize="18sp" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/rdBtnUkn"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Unknown"
+                android:text="Unknown (Both)"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
         </RadioGroup>
@@ -141,14 +142,16 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/btnSignUp"
+            android:id="@+id/btnSignIn"
             android:layout_width="300dp"
             android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_weight="1.5"
-            android:background="@drawable/btn_shape"
+            android:background="@drawable/btn_register_shape"
+            android:onClick="onClick"
             android:text="SIGN-UP"
 
+            android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold"
             android:theme="@style/LoginButton" />
@@ -158,7 +161,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.2"
-            android:text="KorimaGIGS" />
+            android:text="KorimaGIGS"
+            android:textColor="#ED000000" />
     </LinearLayout>
 
 </LinearLayout>

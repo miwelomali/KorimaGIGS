@@ -42,7 +42,7 @@
             android:textColor="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/edTxtEmail"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -63,7 +63,7 @@
 
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/edTxtPassword"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
@@ -85,14 +85,16 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/btnSignUp"
+            android:id="@+id/btnSignIn"
             android:layout_width="300dp"
             android:layout_height="0dp"
             android:layout_gravity="center"
 
             android:layout_weight="1.5"
-            android:background="@drawable/btn_shape"
+            android:background="@drawable/btn_login_shape"
+            android:onClick="onClick"
             android:text="LOGIN"
+            android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold"
             android:theme="@style/LoginButton" />
@@ -102,7 +104,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.2"
-            android:text="KorimaGIGS" />
+            android:text="KorimaGIGS"
+            android:textColor="#000000" />
     </LinearLayout>
 
 
