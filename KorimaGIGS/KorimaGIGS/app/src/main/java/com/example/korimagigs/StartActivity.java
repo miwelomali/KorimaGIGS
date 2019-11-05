@@ -10,7 +10,8 @@ import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class MainActivity extends AppCompatActivity {
+public class StartActivity extends AppCompatActivity {
+
     Intent intent;
     Thread tHilo;
     MediaPlayer mp;

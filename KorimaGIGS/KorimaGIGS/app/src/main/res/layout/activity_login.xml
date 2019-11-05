@@ -85,7 +85,7 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnSignUp"
             android:layout_width="300dp"
             android:layout_height="0dp"
             android:layout_gravity="center"
@@ -94,6 +94,7 @@
             android:background="@drawable/btn_shape"
             android:text="LOGIN"
             android:textSize="24sp"
+            android:textStyle="bold"
             android:theme="@style/LoginButton" />
 
         <TextView
