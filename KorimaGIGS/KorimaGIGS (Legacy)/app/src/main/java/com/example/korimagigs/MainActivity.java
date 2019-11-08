@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 txtVwTypeUser.setText(user.getType());
 
                 if (user.getImageURL().equals("default")) {
-                    imgVwImagen.setImageResource(R.drawable.def_user);
+                    imgVwImagen.setImageResource(R.mipmap.ic_launcher);
                 } else {
                     Glide.with(getApplicationContext()).load(user.getImageURL()).into(imgVwImagen);
                 }

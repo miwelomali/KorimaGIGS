@@ -4,28 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_User"
-    android:background="#212426"
+    tools:context=".activity_Artist"
     android:orientation="vertical"
+    android:background="#212426"
     android:padding="10dp">
 
     <ImageView
-        android:id="@+id/imgVwUser"
+        android:id="@+id/imgVwArtist"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        app:srcCompat="@drawable/def_user"
-        android:layout_marginBottom="5dp" />
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/def_user" />
 
     <TextView
-        android:id="@+id/txtUser"
+        android:id="@+id/txtVwArtist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-    <ListView
-        android:id="@+id/lsUser"
+    <TextView
+        android:id="@+id/txtVwGenre"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3" />
+        android:layout_weight="1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtVwLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
 </LinearLayout>

@@ -4,7 +4,6 @@
     package="com.example.korimagigs">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -14,12 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity
-            android:name=".activity_Artist"
-            android:theme="@style/listItem" />
-        <activity
-            android:name=".activity_User"
-            android:theme="@style/listItem" />
+        <activity android:name=".activity_Artist"></activity>
+        <activity android:name=".activity_User" />
         <activity
             android:name=".StartActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="KórimaGIGS"
+        android:text="KorimaGIGS"
         android:textAlignment="center"
         android:textColor="#FCFCFC"
         android:textSize="40sp"

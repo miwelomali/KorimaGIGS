@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "878279851860",
+    "firebase_url": "https://korimagigs.firebaseio.com",
+    "project_id": "korimagigs",
+    "storage_bucket": "korimagigs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878279851860:android:9620e04a6918d872f812c1",
+        "android_client_info": {
+          "package_name": "com.example.korimagigs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878279851860-m6ru0f0daqcm4v5jgfgtkv12mgobnrh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.korimagigs",
+            "certificate_hash": "067cae591b1ba952b9b7cded7d230ec878ab1bc1"
+          }
+        },
+        {
+          "client_id": "878279851860-l7p66evfa61a7iv4ddgasthbubcgnk3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGJjuoOBcnbHFEIvjkm5mR9843i38gyJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878279851860-l7p66evfa61a7iv4ddgasthbubcgnk3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
