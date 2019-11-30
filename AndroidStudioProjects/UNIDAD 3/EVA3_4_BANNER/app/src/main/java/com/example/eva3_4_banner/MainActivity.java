@@ -15,33 +15,35 @@ public class MainActivity extends AppCompatActivity {
     SeekBar barra;
     int iCont = 1;
     int iCambio_Tiempo = 1000;
+    int value;
+    int max = 3000;
+    int min = 200;
     Thread tHilo;
     @SuppressLint("HandlerLeak")
-Handler handler = new Handler(){
-    @Override
-    public void handleMessage(@NonNull Message msg) {
-        super.handleMessage(msg);
-        switch (iCont){
-            case 1:
-                imagen.setImageResource(R.drawable.cloudy);
-                iCont++;
-                break;
+    Handler handler = new Handler() {
+        @Override
+        public void handleMessage(@NonNull Message msg) {
+            super.handleMessage(msg);
+            switch (iCont) {
+                case 1:
+                    imagen.setImageResource(R.drawable.cloudy);
+                    iCont++;
+                    break;
 
-            case 2:
-                imagen.setImageResource(R.drawable.sunny);
-                iCont++;
-                break;
-            default:
-                imagen.setImageResource(R.drawable.rainy);
-                iCont=1;
-                break;
+                case 2:
+                    imagen.setImageResource(R.drawable.sunny);
+                    iCont++;
+                    break;
+                default:
+                    imagen.setImageResource(R.drawable.rainy);
+                    iCont = 1;
+                    break;
 
-            //default:
-               // imagen.setImageResource(R.drawable.ic_launcher_background);
+                //default:
+                // imagen.setImageResource(R.drawable.ic_launcher_background);
+            }
         }
-    }
-};
-
+    };
 
 
     @Override
@@ -50,10 +52,14 @@ Handler handler = new Handler(){
         setContentView(R.layout.activity_main);
         imagen = findViewById(R.id.imageView);
         barra = findViewById(R.id.seekBar);
+        barra.setMax(max - min);
         barra.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                iCambio_Tiempo = i;
+                value = max - i;
+
+                iCambio_Tiempo = value;
+
 
             }
 
@@ -67,11 +73,11 @@ Handler handler = new Handler(){
 
             }
         });
-        tHilo = new Thread(){
+        tHilo = new Thread() {
             @Override
             public void run() {
                 super.run();
-                while (true){
+                while (true) {
                     try {
                         Thread.sleep(iCambio_Tiempo);
                         Message msg = handler.obtainMessage();
